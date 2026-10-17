@@ -7,7 +7,6 @@ material_previo/
 *.tfstate
 *.tfstate.*
 *.tfplan
-.terraform.lock.hcl
 crash.log
 # Llaves y credenciales
 *.pem
@@ -19,11 +18,15 @@ global-bundle.pem
 # Python
 __pycache__/
 .venv/
+.tmp_pip/
+.tmp_render*/
 *.pyc
-punto3_documentdb/.llaves/
+**/.llaves/
 
 # Temporales del sistema y archivos empaquetados
 .DS_Store
 Thumbs.db
 *.tmp
 *.zip
+*.docx
+~$*.docx

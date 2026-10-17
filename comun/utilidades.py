@@ -22,7 +22,7 @@ from typing import Any, Callable, Iterable
 
 import boto3
 
-RAIZ = Path(__file__).resolve().parent.parent
+RAIZ = next(p for p in Path(__file__).resolve().parents if (p / "pyproject.toml").exists())
 REGION = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or "us-east-1"
 PREFIJO = os.getenv("TALLER_PREFIJO", "taller-ingdata")
 
