@@ -18,6 +18,7 @@ global-bundle.pem
 # Python
 __pycache__/
 .venv/
+.vscode/
 .tmp_pip/
 .tmp_render*/
 *.pyc
