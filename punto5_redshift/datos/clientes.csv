@@ -1,0 +1,21 @@
+id_cliente,nombre,ciudad,segmento,fecha_registro
+1,Ana Mejia,Barranquilla,Estandar,2025-05-02
+2,Bruno Cardona,Barranquilla,Corporativo,2025-08-17
+3,Carla Lopez,Medellin,Estandar,2026-03-28
+4,Diego Restrepo,Medellin,Corporativo,2025-04-24
+5,Elena Vargas,Envigado,Premium,2025-01-12
+6,Felipe Cardona,Bogota,Premium,2025-08-04
+7,Gabriela Cardona,Envigado,Estandar,2026-01-01
+8,Hector Rojas,Barranquilla,Premium,2025-12-15
+9,Isabel Vargas,Medellin,Premium,2025-10-22
+10,Julian Mejia,Bogota,Corporativo,2025-01-26
+11,Karen Rojas,Cali,Corporativo,2026-03-09
+12,Luis Cardona,Barranquilla,Corporativo,2025-04-30
+13,Manuela Restrepo,Cali,Corporativo,2026-02-12
+14,Nicolas Gomez,Barranquilla,Estandar,2026-06-10
+15,Olga Gomez,Envigado,Estandar,2025-05-13
+16,Pablo Vargas,Medellin,Corporativo,2026-03-16
+17,Quintina Rojas,Envigado,Corporativo,2025-08-23
+18,Ricardo Restrepo,Barranquilla,Corporativo,2026-04-26
+19,Sara Vargas,Cali,Corporativo,2025-11-12
+20,Tomas Restrepo,Bogota,Estandar,2025-07-27

@@ -1,0 +1,7 @@
+recurso,estado
+Workgroup,no existe (ResourceNotFoundException)
+Namespace,no existe (ResourceNotFoundException)
+Secreto admin,no existe (ResourceNotFoundException)
+Snapshots manuales del namespace,ninguno
+Rol IAM,no existe
+Bucket S3,no existe

@@ -1,0 +1,2 @@
+t_fecha,t_precio,t_cp,t_cant
+date,"decimal(12,2)",varchar,integer

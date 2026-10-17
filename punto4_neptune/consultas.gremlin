@@ -1,0 +1,11 @@
+// name: g1_recomendar_amigos
+// pregunta: Igual que q1 en Gremlin: amigos de amigos de Ana que no son sus amigos.
+g.V().has('Estudiante','nombre','Ana').aggregate('excluir').both('CONOCE').aggregate('excluir').both('CONOCE').where(without('excluir')).dedup().values('nombre')
+
+// name: g2_profesores_de_medellin
+// pregunta: Igual que q2 en Gremlin: profesores de los estudiantes que viven en Medellín.
+g.V().has('Ciudad','nombre','Medellín').in('VIVE_EN').hasLabel('Estudiante').out('INSCRITO_EN').in('DICTA').dedup().values('nombre')
+
+// name: g3_ruta_prerrequisitos
+// pregunta: Igual que q3 en Gremlin: caminos de prerrequisitos desde Visión Artificial.
+g.V().has('Curso','nombre','Visión Artificial').repeat(out('REQUIERE')).emit().path().by('nombre')

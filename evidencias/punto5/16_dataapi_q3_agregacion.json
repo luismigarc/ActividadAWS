@@ -1,0 +1,9 @@
+{
+  "id": "e6b8cb76-551a-47ee-b684-8c92a450ff7b",
+  "estado": "FINISHED",
+  "duracion_ms": 659.264865,
+  "filas_resultado": 9,
+  "error": null,
+  "sql": "SELECT pr.categoria, c.segmento,\n       COUNT(*)        AS num_pedidos,\n       SUM(p.cantidad) AS unidades,\n       ROUND(SUM(p.cantidad * pr.precio_unitario * (1 - p.descuento_pct / 100.0)), 0) AS ventas_netas,\n       ROUND(AVG(p.cantidad * pr.precio_unitario * (1 - p.descuento_pct / 100.0)), 0) AS ticket_promedio\nFROM pedidos p\nJOIN productos pr ON pr.id_producto = p.id_producto\nJOIN clientes  c  ON c.id_cliente  = p.id_cliente\nGROUP BY pr.categoria, c.segmento\nORDER BY ventas_netas DESC",
+  "subsentencias": []
+}

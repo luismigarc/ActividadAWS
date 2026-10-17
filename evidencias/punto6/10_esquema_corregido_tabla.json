@@ -1,0 +1,114 @@
+{
+  "Table": {
+    "Name": "ventas",
+    "DatabaseName": "taller_ventas_db",
+    "Owner": "owner",
+    "CreateTime": "2026-10-15T19:22:13-05:00",
+    "UpdateTime": "2026-10-15T19:23:27-05:00",
+    "Retention": 0,
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "id_venta",
+          "Type": "bigint"
+        },
+        {
+          "Name": "fecha",
+          "Type": "date"
+        },
+        {
+          "Name": "ciudad",
+          "Type": "string"
+        },
+        {
+          "Name": "codigo_postal",
+          "Type": "string"
+        },
+        {
+          "Name": "producto",
+          "Type": "string"
+        },
+        {
+          "Name": "categoria",
+          "Type": "string"
+        },
+        {
+          "Name": "cantidad",
+          "Type": "int"
+        },
+        {
+          "Name": "precio_unitario",
+          "Type": "decimal(12,2)"
+        },
+        {
+          "Name": "cliente_vip",
+          "Type": "boolean"
+        }
+      ],
+      "Location": "s3://taller-ingdata-p6-129898048658-us-east-1/ventas/",
+      "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+      "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+      "Compressed": false,
+      "NumberOfBuckets": -1,
+      "SerdeInfo": {
+        "SerializationLibrary": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+        "Parameters": {
+          "field.delim": ","
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": [],
+      "Parameters": {
+        "skip.header.line.count": "1",
+        "sizeKey": "1666",
+        "objectCount": "1",
+        "UPDATED_BY_CRAWLER": "taller-ingdata-p6-crawler",
+        "recordCount": "24",
+        "CrawlerSchemaSerializerVersion": "1.0",
+        "averageRecordSize": "69",
+        "partition_filtering.enabled": "true",
+        "compressionType": "none",
+        "CrawlerSchemaDeserializerVersion": "1.0",
+        "classification": "csv",
+        "columnsOrdered": "true",
+        "delimiter": ",",
+        "areColumnsQuoted": "false",
+        "CRAWL_RUN_ID": "236f8f5e-ddc9-4945-8f8e-d0d10e24480d",
+        "typeOfData": "file"
+      },
+      "StoredAsSubDirectories": false
+    },
+    "PartitionKeys": [
+      {
+        "Name": "mes",
+        "Type": "string"
+      }
+    ],
+    "TableType": "EXTERNAL_TABLE",
+    "Parameters": {
+      "skip.header.line.count": "1",
+      "sizeKey": "1666",
+      "objectCount": "1",
+      "UPDATED_BY_CRAWLER": "taller-ingdata-p6-crawler",
+      "recordCount": "24",
+      "CrawlerSchemaSerializerVersion": "1.0",
+      "averageRecordSize": "69",
+      "partition_filtering.enabled": "true",
+      "compressionType": "none",
+      "CrawlerSchemaDeserializerVersion": "1.0",
+      "classification": "csv",
+      "columnsOrdered": "true",
+      "delimiter": ",",
+      "areColumnsQuoted": "false",
+      "CRAWL_RUN_ID": "236f8f5e-ddc9-4945-8f8e-d0d10e24480d",
+      "comentario_taller": "tipos corregidos manualmente",
+      "typeOfData": "file"
+    },
+    "CreatedBy": "arn:aws:sts::129898048658:assumed-role/taller-ingdata-p6-glue-crawler-role/AWS-Crawler",
+    "IsRegisteredWithLakeFormation": false,
+    "CatalogId": "129898048658",
+    "VersionId": "2",
+    "IsMultiDialectView": false,
+    "IsMaterializedView": false
+  }
+}

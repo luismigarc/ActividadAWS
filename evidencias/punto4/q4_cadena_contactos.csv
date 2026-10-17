@@ -1,0 +1,4 @@
+nodos,saltos
+Ana -> Carla -> Diego -> Felipe,3
+Ana -> Bruno -> Diego -> Felipe,3
+Ana -> Carla -> Elena -> Felipe,3

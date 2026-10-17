@@ -1,0 +1,7 @@
+{
+  "Status": "SUCCEEDED",
+  "LogGroup": "/aws-glue/crawlers",
+  "LogStream": "taller-ingdata-p6-crawler",
+  "MessagePrefix": "236f8f5e-ddc9-4945-8f8e-d0d10e24480d",
+  "StartTime": "2026-10-15T19:21:34-05:00"
+}

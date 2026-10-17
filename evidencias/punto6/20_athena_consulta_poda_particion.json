@@ -1,0 +1,12 @@
+{
+  "sql": "SELECT COUNT(*) AS ventas_octubre FROM \"ventas\" WHERE mes = '2026-10'",
+  "estado": "SUCCEEDED",
+  "query_id": "6bfd4f48-47b5-4d8c-b5f6-f5974ebbafb2",
+  "bytes_escaneados": 726,
+  "tiempo_motor_ms": 538,
+  "motivo": null,
+  "columnas": [
+    "ventas_octubre"
+  ],
+  "filas": 1
+}

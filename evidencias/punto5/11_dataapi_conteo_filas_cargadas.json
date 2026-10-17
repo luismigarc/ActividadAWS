@@ -1,0 +1,9 @@
+{
+  "id": "ce23c1c0-e716-49c6-88b3-fad7f139fd7f",
+  "estado": "FINISHED",
+  "duracion_ms": 491.712528,
+  "filas_resultado": 3,
+  "error": null,
+  "sql": "SELECT 'clientes' AS tabla, COUNT(*) AS filas FROM clientes\nUNION ALL SELECT 'productos', COUNT(*) FROM productos\nUNION ALL SELECT 'pedidos', COUNT(*) FROM pedidos ORDER BY 1",
+  "subsentencias": []
+}

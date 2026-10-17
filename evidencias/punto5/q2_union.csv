@@ -1,0 +1,11 @@
+id_pedido,fecha_pedido,cliente,producto,cantidad,descuento_pct,valor_neto
+1078,2026-09-09,Pablo Vargas,Portatil 14,3,15,8922450
+1105,2026-04-04,Diego Restrepo,Portatil 14,3,15,8922450
+1062,2026-04-15,Pablo Vargas,Portatil 14,2,0,6998000
+1006,2026-07-25,Pablo Vargas,Monitor 27,5,15,5482500
+1007,2026-04-17,Diego Restrepo,Escritorio en L,4,0,4600000
+1041,2026-04-17,Isabel Vargas,Escritorio en L,4,0,4600000
+1095,2026-06-21,Isabel Vargas,Escritorio en L,3,5,3277500
+1058,2026-05-29,Pablo Vargas,Portatil 14,1,10,3149100
+1107,2026-08-10,Carla Lopez,Escritorio en L,2,0,2300000
+1085,2026-07-07,Diego Restrepo,Escritorio en L,2,15,1955000

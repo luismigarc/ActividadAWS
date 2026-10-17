@@ -1,0 +1,41 @@
+{
+  "SecurityGroups": [
+    {
+      "GroupId": "sg-06b963e2ace085e8c",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ],
+      "VpcId": "vpc-07bf2d2d4397b6f43",
+      "SecurityGroupArn": "arn:aws:ec2:us-east-1:129898048658:security-group/sg-06b963e2ace085e8c",
+      "OwnerId": "129898048658",
+      "GroupName": "taller-ingdata-neptune-sg",
+      "Description": "Neptune 8182 solo desde la IP del estudiante",
+      "IpPermissions": [
+        {
+          "IpProtocol": "tcp",
+          "FromPort": 8182,
+          "ToPort": 8182,
+          "UserIdGroupPairs": [],
+          "IpRanges": [
+            {
+              "Description": "IP publica del estudiante",
+              "CidrIp": "190.240.81.246/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": []
+        }
+      ]
+    }
+  ]
+}

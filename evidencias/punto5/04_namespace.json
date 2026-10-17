@@ -1,0 +1,17 @@
+{
+  "adminPasswordSecretArn": "arn:aws:secretsmanager:us-east-1:129898048658:secret:redshift!taller-ingdata-ns-admin_taller-FPwVYy",
+  "adminUsername": "admin_taller",
+  "creationDate": "2026-10-16T01:06:29.863000+00:00",
+  "dbName": "tienda",
+  "defaultIamRoleArn": "arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role",
+  "iamRoles": [
+    "IamRole(applyStatus=null, iamRoleArn=arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role)"
+  ],
+  "kmsKeyId": "AWS_OWNED_KMS_KEY",
+  "lakehouseRegistrationStatus": "NOT_REGISTERED",
+  "logExports": [],
+  "namespaceArn": "arn:aws:redshift-serverless:us-east-1:129898048658:namespace/2e2a1bd1-977b-47dd-aeee-a77e82007079",
+  "namespaceId": "2e2a1bd1-977b-47dd-aeee-a77e82007079",
+  "namespaceName": "taller-ingdata-ns",
+  "status": "AVAILABLE"
+}

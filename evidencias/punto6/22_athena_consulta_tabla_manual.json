@@ -1,0 +1,14 @@
+{
+  "sql": "SELECT categoria, COUNT(*) AS num_ventas,\n       CAST(SUM(cantidad * precio_unitario) AS decimal(14,2)) AS total_ventas\nFROM ventas_manual GROUP BY categoria ORDER BY total_ventas DESC",
+  "estado": "SUCCEEDED",
+  "query_id": "d5b0f883-dfb6-44b8-a2d2-29975b2458a7",
+  "bytes_escaneados": 2392,
+  "tiempo_motor_ms": 602,
+  "motivo": null,
+  "columnas": [
+    "categoria",
+    "num_ventas",
+    "total_ventas"
+  ],
+  "filas": 3
+}

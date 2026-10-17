@@ -1,0 +1,53 @@
+{
+  "id": "908277a3-bb52-4992-a230-5022512c29a9",
+  "estado": "FINISHED",
+  "duracion_ms": 430.685096,
+  "filas_resultado": -1,
+  "error": null,
+  "sql": [
+    "DROP TABLE IF EXISTS pedidos",
+    "DROP TABLE IF EXISTS clientes",
+    "DROP TABLE IF EXISTS productos",
+    "CREATE TABLE clientes (\n    id_cliente      INTEGER      NOT NULL PRIMARY KEY,\n    nombre          VARCHAR(60)  NOT NULL,\n    ciudad          VARCHAR(30)  NOT NULL,\n    segmento        VARCHAR(20)  NOT NULL,\n    fecha_registro  DATE         NOT NULL\n) DISTSTYLE ALL",
+    "CREATE TABLE productos (\n    id_producto     INTEGER       NOT NULL PRIMARY KEY,\n    nombre          VARCHAR(60)   NOT NULL,\n    categoria       VARCHAR(30)   NOT NULL,\n    precio_unitario DECIMAL(12,2) NOT NULL\n) DISTSTYLE ALL",
+    "CREATE TABLE pedidos (\n    id_pedido       INTEGER  NOT NULL PRIMARY KEY,\n    id_cliente      INTEGER  NOT NULL REFERENCES clientes(id_cliente),\n    id_producto     INTEGER  NOT NULL REFERENCES productos(id_producto),\n    fecha_pedido    DATE     NOT NULL,\n    cantidad        SMALLINT NOT NULL,\n    descuento_pct   SMALLINT NOT NULL\n) DISTKEY(id_cliente) SORTKEY(fecha_pedido)"
+  ],
+  "subsentencias": [
+    {
+      "sql": "DROP TABLE IF EXISTS pedidos",
+      "estado": "FINISHED",
+      "duracion_ms": 45.622513,
+      "error": null
+    },
+    {
+      "sql": "DROP TABLE IF EXISTS clientes",
+      "estado": "FINISHED",
+      "duracion_ms": 62.504537,
+      "error": null
+    },
+    {
+      "sql": "DROP TABLE IF EXISTS productos",
+      "estado": "FINISHED",
+      "duracion_ms": 48.980867,
+      "error": null
+    },
+    {
+      "sql": "CREATE TABLE clientes (\n    id_cliente      INTEGER      NOT NULL PRIMARY KEY,\n    nombre          VARCHAR(60)  NOT NULL,\n    ciudad          VARCHAR(30)  NOT NULL,\n    segmento        VARCHAR(20)  NOT NULL,\n    fecha_registro  DATE         NOT NULL\n) DISTSTYLE ALL",
+      "estado": "FINISHED",
+      "duracion_ms": 226.933924,
+      "error": null
+    },
+    {
+      "sql": "CREATE TABLE productos (\n    id_producto     INTEGER       NOT NULL PRIMARY KEY,\n    nombre          VARCHAR(60)   NOT NULL,\n    categoria       VARCHAR(30)   NOT NULL,\n    precio_unitario DECIMAL(12,2) NOT NULL\n) DISTSTYLE ALL",
+      "estado": "FINISHED",
+      "duracion_ms": 26.479888,
+      "error": null
+    },
+    {
+      "sql": "CREATE TABLE pedidos (\n    id_pedido       INTEGER  NOT NULL PRIMARY KEY,\n    id_cliente      INTEGER  NOT NULL REFERENCES clientes(id_cliente),\n    id_producto     INTEGER  NOT NULL REFERENCES productos(id_producto),\n    fecha_pedido    DATE     NOT NULL,\n    cantidad        SMALLINT NOT NULL,\n    descuento_pct   SMALLINT NOT NULL\n) DISTKEY(id_cliente) SORTKEY(fecha_pedido)",
+      "estado": "FINISHED",
+      "duracion_ms": 20.163367,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+columna,tipo_inferido,tipo_esperado,correcto
+id_venta,bigint,bigint,sí
+fecha,string,date,NO
+ciudad,string,string,sí
+codigo_postal,bigint,string,NO
+producto,string,string,sí
+categoria,string,string,sí
+cantidad,bigint,int,NO
+precio_unitario,double,"decimal(12,2)",NO
+cliente_vip,boolean,boolean,sí

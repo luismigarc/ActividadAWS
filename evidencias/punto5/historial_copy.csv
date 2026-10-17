@@ -1,0 +1,4 @@
+query_id,table_name,file_format,loaded_rows,loaded_bytes,duration,status
+1610,pedidos,Text,120,3186,459355,completed
+1597,productos,Text,10,373,331816,completed
+1588,clientes,Text,20,1008,505703,completed

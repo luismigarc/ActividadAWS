@@ -1,0 +1,9 @@
+{
+  "id": "483c4255-177c-45bb-8352-2ead39123230",
+  "estado": "FINISHED",
+  "duracion_ms": 726.368746,
+  "filas_resultado": 10,
+  "error": null,
+  "sql": "SELECT p.id_pedido, p.fecha_pedido, c.nombre AS cliente, pr.nombre AS producto,\n       p.cantidad, p.descuento_pct,\n       ROUND(p.cantidad * pr.precio_unitario * (1 - p.descuento_pct / 100.0), 0) AS valor_neto\nFROM pedidos p\nJOIN clientes  c  ON c.id_cliente  = p.id_cliente\nJOIN productos pr ON pr.id_producto = p.id_producto\nWHERE c.ciudad = 'Medellin'\nORDER BY valor_neto DESC, p.id_pedido\nLIMIT 10",
+  "subsentencias": []
+}

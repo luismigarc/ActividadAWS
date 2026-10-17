@@ -1,0 +1,21 @@
+{
+  "consulta": "MATCH (a:Estudiante {nombre: 'Ana'})-[:CONOCE]-(amigo:Estudiante)-[:CONOCE]-(sugerido:Estudiante)\nWHERE sugerido <> a\nOPTIONAL MATCH (a)-[ya:CONOCE]-(sugerido)\nWITH sugerido, amigo, ya\nWHERE ya IS NULL\nRETURN sugerido.nombre AS sugerido, collect(DISTINCT amigo.nombre) AS amigos_en_comun,\n       count(DISTINCT amigo) AS num_amigos_comun\nORDER BY num_amigos_comun DESC, sugerido",
+  "resultado": [
+    {
+      "sugerido": "Diego",
+      "amigos_en_comun": [
+        "Carla",
+        "Bruno"
+      ],
+      "num_amigos_comun": 2
+    },
+    {
+      "sugerido": "Elena",
+      "amigos_en_comun": [
+        "Carla"
+      ],
+      "num_amigos_comun": 1
+    }
+  ],
+  "ms_ida_y_vuelta": 17639.323949813843
+}

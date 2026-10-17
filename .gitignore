@@ -1,0 +1,29 @@
+# Estado local de los scripts (ARN e IDs de recursos creados)
+.estado/
+# Material de trabajo anterior; la entrega usa únicamente la estructura de la raíz
+material_previo/
+# Terraform: estado y caché NUNCA se suben (pueden contener datos sensibles)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
+crash.log
+# Llaves y credenciales
+*.pem
+*.key
+.env
+credentials
+# Certificado público de DocumentDB (se descarga con el script)
+global-bundle.pem
+# Python
+__pycache__/
+.venv/
+*.pyc
+punto3_documentdb/.llaves/
+
+# Temporales del sistema y archivos empaquetados
+.DS_Store
+Thumbs.db
+*.tmp
+*.zip

@@ -1,0 +1,5 @@
+profesor,curso,estudiantes,nota_promedio
+Prof. Gómez,Bases de Datos,Carla,4.7
+Prof. Gómez,Ingeniería de Datos,Diego -> Ana,4.0
+Prof. Rojas,Computación en la Nube,Carla -> Ana,4.05
+Prof. Rojas,Visión Artificial,Diego,4.4

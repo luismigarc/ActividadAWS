@@ -1,0 +1,13 @@
+{
+  "sql": "SELECT DISTINCT ciudad, codigo_postal FROM \"ventas\" ORDER BY ciudad",
+  "estado": "SUCCEEDED",
+  "query_id": "57ceb0ac-51b6-40fb-92c4-70b8800740e0",
+  "bytes_escaneados": 1666,
+  "tiempo_motor_ms": 633,
+  "motivo": null,
+  "columnas": [
+    "ciudad",
+    "codigo_postal"
+  ],
+  "filas": 5
+}

@@ -1,0 +1,14 @@
+{
+  "consulta": "MATCH ruta = (c:Curso {nombre: 'Visión Artificial'})-[:REQUIERE*1..5]->(pre:Curso)\nRETURN pre.nombre AS prerrequisito, length(ruta) AS nivel\nORDER BY nivel",
+  "resultado": [
+    {
+      "prerrequisito": "Ingeniería de Datos",
+      "nivel": 1
+    },
+    {
+      "prerrequisito": "Bases de Datos",
+      "nivel": 2
+    }
+  ],
+  "ms_ida_y_vuelta": 17312.469482421875
+}

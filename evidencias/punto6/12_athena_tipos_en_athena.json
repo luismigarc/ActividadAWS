@@ -1,0 +1,15 @@
+{
+  "sql": "SELECT typeof(fecha) t_fecha, typeof(precio_unitario) t_precio, typeof(codigo_postal) t_cp, typeof(cantidad) t_cant FROM \"ventas\" LIMIT 1",
+  "estado": "SUCCEEDED",
+  "query_id": "3b385dd3-00a0-4971-81c0-2e6819ea8743",
+  "bytes_escaneados": 1666,
+  "tiempo_motor_ms": 851,
+  "motivo": null,
+  "columnas": [
+    "t_fecha",
+    "t_precio",
+    "t_cp",
+    "t_cant"
+  ],
+  "filas": 1
+}

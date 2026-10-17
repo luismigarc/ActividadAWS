@@ -1,0 +1,55 @@
+{
+  "descripcion": "Red académica: estudiantes, profesores, cursos y ciudades",
+  "vertices": {
+    "Estudiante": [
+      {"codigo": "e1", "nombre": "Ana", "semestre": 9},
+      {"codigo": "e2", "nombre": "Bruno", "semestre": 7},
+      {"codigo": "e3", "nombre": "Carla", "semestre": 5},
+      {"codigo": "e4", "nombre": "Diego", "semestre": 8},
+      {"codigo": "e5", "nombre": "Elena", "semestre": 6},
+      {"codigo": "e6", "nombre": "Felipe", "semestre": 4}
+    ],
+    "Profesor": [
+      {"codigo": "p1", "nombre": "Prof. Gómez", "area": "Datos"},
+      {"codigo": "p2", "nombre": "Prof. Rojas", "area": "Sistemas"}
+    ],
+    "Curso": [
+      {"codigo": "c1", "nombre": "Bases de Datos", "creditos": 3},
+      {"codigo": "c2", "nombre": "Ingeniería de Datos", "creditos": 4},
+      {"codigo": "c3", "nombre": "Computación en la Nube", "creditos": 3},
+      {"codigo": "c4", "nombre": "Visión Artificial", "creditos": 4}
+    ],
+    "Ciudad": [
+      {"codigo": "m", "nombre": "Medellín"},
+      {"codigo": "b", "nombre": "Bogotá"}
+    ]
+  },
+  "aristas": {
+    "CONOCE": [
+      {"de": "e1", "a": "e2", "desde": 2023}, {"de": "e1", "a": "e3", "desde": 2024},
+      {"de": "e2", "a": "e4", "desde": 2022}, {"de": "e3", "a": "e5", "desde": 2025},
+      {"de": "e4", "a": "e6", "desde": 2024}, {"de": "e5", "a": "e6", "desde": 2025},
+      {"de": "e3", "a": "e4", "desde": 2024}
+    ],
+    "INSCRITO_EN": [
+      {"de": "e1", "a": "c2", "nota": 4.5}, {"de": "e1", "a": "c3", "nota": 4.2},
+      {"de": "e2", "a": "c2", "nota": 3.8}, {"de": "e2", "a": "c4", "nota": 4.0},
+      {"de": "e3", "a": "c1", "nota": 4.7}, {"de": "e3", "a": "c3", "nota": 3.9},
+      {"de": "e4", "a": "c2", "nota": 3.5}, {"de": "e4", "a": "c4", "nota": 4.4},
+      {"de": "e5", "a": "c3", "nota": 4.1}, {"de": "e6", "a": "c1", "nota": 3.6},
+      {"de": "e6", "a": "c2", "nota": 4.0}
+    ],
+    "DICTA": [
+      {"de": "p1", "a": "c1"}, {"de": "p1", "a": "c2"},
+      {"de": "p2", "a": "c3"}, {"de": "p2", "a": "c4"}
+    ],
+    "REQUIERE": [
+      {"de": "c2", "a": "c1"}, {"de": "c3", "a": "c1"}, {"de": "c4", "a": "c2"}
+    ],
+    "VIVE_EN": [
+      {"de": "e1", "a": "m"}, {"de": "e2", "a": "b"}, {"de": "e3", "a": "m"},
+      {"de": "e4", "a": "m"}, {"de": "e5", "a": "b"}, {"de": "e6", "a": "b"},
+      {"de": "p1", "a": "m"}, {"de": "p2", "a": "b"}
+    ]
+  }
+}

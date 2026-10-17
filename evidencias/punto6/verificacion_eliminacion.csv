@@ -1,0 +1,6 @@
+recurso,estado
+Workgroup Athena,no existe (InvalidRequestException)
+Crawler,no existe (EntityNotFoundException)
+Base de datos Glue,no existe (EntityNotFoundException)
+Rol IAM,no existe
+Bucket S3,no existe

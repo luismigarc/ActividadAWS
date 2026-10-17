@@ -1,0 +1,22 @@
+{
+  "WorkGroup": {
+    "Name": "taller-ingdata-p6-wg",
+    "State": "ENABLED",
+    "Configuration": {
+      "ResultConfiguration": {
+        "OutputLocation": "s3://taller-ingdata-p6-129898048658-us-east-1/athena-resultados/"
+      },
+      "EnforceWorkGroupConfiguration": true,
+      "PublishCloudWatchMetricsEnabled": false,
+      "BytesScannedCutoffPerQuery": 10485760,
+      "RequesterPaysEnabled": false,
+      "EngineVersion": {
+        "SelectedEngineVersion": "AUTO",
+        "EffectiveEngineVersion": "Athena engine version 3"
+      },
+      "EnableMinimumEncryptionConfiguration": false
+    },
+    "Description": "Workgroup del taller: resultados en S3 y límite de 10 MB por consulta",
+    "CreationTime": "2026-10-15T19:20:58.933000-05:00"
+  }
+}

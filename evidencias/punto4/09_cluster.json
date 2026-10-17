@@ -1,0 +1,51 @@
+{
+  "AllocatedStorage": 1,
+  "AvailabilityZones": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1f"
+  ],
+  "BackupRetentionPeriod": 1,
+  "DBClusterIdentifier": "taller-ingdata-neptune",
+  "DBClusterParameterGroup": "default.neptune1.4",
+  "DBSubnetGroup": "taller-ingdata-neptune-subnets",
+  "Status": "available",
+  "EarliestRestorableTime": "2026-10-16T02:02:41.657000+00:00",
+  "Endpoint": "taller-ingdata-neptune.cluster-cyjau6o6m52z.us-east-1.neptune.amazonaws.com",
+  "ReaderEndpoint": "taller-ingdata-neptune.cluster-ro-cyjau6o6m52z.us-east-1.neptune.amazonaws.com",
+  "MultiAZ": false,
+  "Engine": "neptune",
+  "EngineVersion": "1.4.8.1",
+  "LatestRestorableTime": "2026-10-16T02:02:41.657000+00:00",
+  "Port": 8182,
+  "MasterUsername": "admin",
+  "PreferredBackupWindow": "03:32-04:02",
+  "PreferredMaintenanceWindow": "thu:09:52-thu:10:22",
+  "ReadReplicaIdentifiers": [],
+  "DBClusterMembers": [
+    {
+      "DBInstanceIdentifier": "taller-ingdata-neptune-1",
+      "IsClusterWriter": true,
+      "DBClusterParameterGroupStatus": "in-sync",
+      "PromotionTier": 1
+    }
+  ],
+  "VpcSecurityGroups": [
+    {
+      "VpcSecurityGroupId": "sg-06b963e2ace085e8c",
+      "Status": "active"
+    }
+  ],
+  "HostedZoneId": "ZUFXD4SLT2LS7",
+  "StorageEncrypted": true,
+  "KmsKeyId": "arn:aws:kms:us-east-1:129898048658:key/02d85c65-d15f-4959-8dfe-bec25027fb58",
+  "DbClusterResourceId": "cluster-SPOQHOQKPPJ7WLHPQUTJUHSGCE",
+  "DBClusterArn": "arn:aws:rds:us-east-1:129898048658:cluster:taller-ingdata-neptune",
+  "AssociatedRoles": [],
+  "IAMDatabaseAuthenticationEnabled": true,
+  "ClusterCreateTime": "2026-10-16T02:02:13.773000+00:00",
+  "CopyTagsToSnapshot": false,
+  "DeletionProtection": false,
+  "CrossAccountClone": false,
+  "NetworkType": "IPV4"
+}

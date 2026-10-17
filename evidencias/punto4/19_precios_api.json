@@ -1,0 +1,32 @@
+{
+  "instancia": [
+    {
+      "descripcion": "$0.0930 per Hrs for Neptune-DB-Instance:db.t4g.medium in US East (N. Virginia)",
+      "unidad": "Hrs",
+      "usd": 0.093,
+      "usagetype": "InstanceUsage:db.t4g.medium"
+    }
+  ],
+  "serverless": [
+    {
+      "descripcion": "USD 0.217 per GB / month for ServerlessV2IOOptimizedUsage in US East (N. Virginia)",
+      "unidad": "NCU-hr",
+      "usd": 0.217,
+      "usagetype": "Neptune:ServerlessIOOptimizedUsage"
+    },
+    {
+      "descripcion": "$0.1608 per NCU-hr for Neptune:ServerlessUsage:CreateDBInstance:0022 in US East (N. Virginia)",
+      "unidad": "NCU-hr",
+      "usd": 0.1608,
+      "usagetype": "Neptune:ServerlessUsage"
+    }
+  ],
+  "almacenamiento": [
+    {
+      "descripcion": "USD 0.225 per GB / month for IO-OptimizedStorageUsage in US East (N. Virginia)",
+      "unidad": "GB-Mo",
+      "usd": 0.225,
+      "usagetype": "IO-OptimizedStorageUsage"
+    }
+  ]
+}

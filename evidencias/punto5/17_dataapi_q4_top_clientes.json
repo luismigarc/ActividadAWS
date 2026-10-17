@@ -1,0 +1,9 @@
+{
+  "id": "d774c9bc-39d2-4d29-b2f6-1367bdc5be77",
+  "estado": "FINISHED",
+  "duracion_ms": 666.227307,
+  "filas_resultado": 5,
+  "error": null,
+  "sql": "SELECT c.id_cliente, c.nombre, c.ciudad, c.segmento,\n       COUNT(*) AS num_pedidos,\n       ROUND(SUM(p.cantidad * pr.precio_unitario * (1 - p.descuento_pct / 100.0)), 0) AS ventas_netas\nFROM pedidos p\nJOIN clientes  c  ON c.id_cliente  = p.id_cliente\nJOIN productos pr ON pr.id_producto = p.id_producto\nGROUP BY c.id_cliente, c.nombre, c.ciudad, c.segmento\nHAVING COUNT(*) >= 5\nORDER BY ventas_netas DESC\nLIMIT 5",
+  "subsentencias": []
+}

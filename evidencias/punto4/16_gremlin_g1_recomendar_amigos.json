@@ -1,0 +1,7 @@
+{
+  "consulta": "g.V().has('Estudiante','nombre','Ana').aggregate('excluir').both('CONOCE').aggregate('excluir').both('CONOCE').where(without('excluir')).dedup().values('nombre')",
+  "resultado": [
+    "Diego",
+    "Elena"
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "CrawlerName": "taller-ingdata-p6-crawler",
+    "TimeLeftSeconds": 0.0,
+    "StillEstimating": false,
+    "LastRuntimeSeconds": 40.606,
+    "MedianRuntimeSeconds": 40.606,
+    "TablesCreated": 1,
+    "TablesUpdated": 0,
+    "TablesDeleted": 0
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "baseCapacity": 4,
+  "configParameters": [
+    {
+      "parameterKey": "auto_mv",
+      "parameterValue": "true"
+    },
+    {
+      "parameterKey": "datestyle",
+      "parameterValue": "ISO, MDY"
+    },
+    {
+      "parameterKey": "enable_case_sensitive_identifier",
+      "parameterValue": "false"
+    },
+    {
+      "parameterKey": "enable_large_strings_opt_in",
+      "parameterValue": ""
+    },
+    {
+      "parameterKey": "enable_user_activity_logging",
+      "parameterValue": "true"
+    },
+    {
+      "parameterKey": "query_group",
+      "parameterValue": "default"
+    },
+    {
+      "parameterKey": "require_ssl",
+      "parameterValue": "true"
+    },
+    {
+      "parameterKey": "search_path",
+      "parameterValue": "$user, public"
+    },
+    {
+      "parameterKey": "use_fips_ssl",
+      "parameterValue": "false"
+    },
+    {
+      "parameterKey": "max_query_execution_time",
+      "parameterValue": "14400"
+    }
+  ],
+  "creationDate": "2026-10-16T01:07:22.494000+00:00",
+  "endpoint": {
+    "address": "taller-ingdata-wg.129898048658.us-east-1.redshift-serverless.amazonaws.com",
+    "port": 5439,
+    "vpcEndpoints": [
+      {
+        "networkInterfaces": [
+          {
+            "availabilityZone": "us-east-1b",
+            "networkInterfaceId": "eni-03d9b73a2dca67114",
+            "privateIpAddress": "172.31.92.142",
+            "subnetId": "subnet-0a4d74e755730b601"
+          },
+          {
+            "availabilityZone": "us-east-1a",
+            "networkInterfaceId": "eni-0a1c1b2c5fe6b6409",
+            "privateIpAddress": "172.31.1.112",
+            "subnetId": "subnet-0a9061d3094c5c0e8"
+          },
+          {
+            "availabilityZone": "us-east-1c",
+            "networkInterfaceId": "eni-0e57035ac8ff817c4",
+            "privateIpAddress": "172.31.19.177",
+            "subnetId": "subnet-049fbadbdc587d086"
+          }
+        ],
+        "vpcEndpointId": "vpce-079b1bd30023d809d",
+        "vpcId": "vpc-07bf2d2d4397b6f43"
+      }
+    ]
+  },
+  "enhancedVpcRouting": false,
+  "extraComputeForAutomaticOptimization": false,
+  "ipAddressType": "ipv4",
+  "namespaceName": "taller-ingdata-ns",
+  "patchVersion": "205",
+  "pricePerformanceTarget": {
+    "status": "DISABLED"
+  },
+  "publiclyAccessible": false,
+  "securityGroupIds": [
+    "sg-006a9ba58460d39c3"
+  ],
+  "status": "AVAILABLE",
+  "subnetIds": [
+    "subnet-0a9061d3094c5c0e8",
+    "subnet-0ce3569331ff3c958",
+    "subnet-01008fbe9945ddc11",
+    "subnet-0402bb5e172434f0d",
+    "subnet-049fbadbdc587d086",
+    "subnet-0a4d74e755730b601"
+  ],
+  "trackName": "current",
+  "workgroupArn": "arn:aws:redshift-serverless:us-east-1:129898048658:workgroup/45546f9c-de70-4eaa-a8f2-4489bb63b4fc",
+  "workgroupId": "45546f9c-de70-4eaa-a8f2-4489bb63b4fc",
+  "workgroupName": "taller-ingdata-wg",
+  "workgroupVersion": "1.0.477953"
+}

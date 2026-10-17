@@ -1,0 +1,6 @@
+recurso,estado
+Instancia,no existe (DBInstanceNotFound)
+Clúster,no existe (DBClusterNotFoundFault)
+Snapshots del clúster,ninguno
+DB subnet group,no existe (DBSubnetGroupNotFoundFault)
+Security group,no existe (InvalidGroup.NotFound)

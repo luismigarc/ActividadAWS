@@ -1,0 +1,91 @@
+{
+  "Table": {
+    "Name": "ventas_manual",
+    "DatabaseName": "taller_ventas_db",
+    "Owner": "hadoop",
+    "CreateTime": "2026-10-15T19:28:53-05:00",
+    "UpdateTime": "2026-10-15T19:28:53-05:00",
+    "LastAccessTime": "1969-12-31T19:00:00-05:00",
+    "Retention": 0,
+    "StorageDescriptor": {
+      "Columns": [
+        {
+          "Name": "id_venta",
+          "Type": "bigint"
+        },
+        {
+          "Name": "fecha",
+          "Type": "date"
+        },
+        {
+          "Name": "ciudad",
+          "Type": "string"
+        },
+        {
+          "Name": "codigo_postal",
+          "Type": "string"
+        },
+        {
+          "Name": "producto",
+          "Type": "string"
+        },
+        {
+          "Name": "categoria",
+          "Type": "string"
+        },
+        {
+          "Name": "cantidad",
+          "Type": "int"
+        },
+        {
+          "Name": "precio_unitario",
+          "Type": "decimal(12,2)"
+        },
+        {
+          "Name": "cliente_vip",
+          "Type": "boolean"
+        }
+      ],
+      "Location": "s3://taller-ingdata-p6-129898048658-us-east-1/ventas",
+      "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+      "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+      "Compressed": false,
+      "NumberOfBuckets": -1,
+      "SerdeInfo": {
+        "SerializationLibrary": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+        "Parameters": {
+          "serialization.format": ",",
+          "field.delim": ","
+        }
+      },
+      "BucketColumns": [],
+      "SortColumns": [],
+      "Parameters": {},
+      "SkewedInfo": {
+        "SkewedColumnNames": [],
+        "SkewedColumnValues": [],
+        "SkewedColumnValueLocationMaps": {}
+      },
+      "StoredAsSubDirectories": false
+    },
+    "PartitionKeys": [
+      {
+        "Name": "mes",
+        "Type": "string"
+      }
+    ],
+    "TableType": "EXTERNAL_TABLE",
+    "Parameters": {
+      "skip.header.line.count": "1",
+      "transient_lastDdlTime": "1792110533",
+      "classification": "csv",
+      "EXTERNAL": "TRUE"
+    },
+    "CreatedBy": "arn:aws:iam::129898048658:user/usercli",
+    "IsRegisteredWithLakeFormation": false,
+    "CatalogId": "129898048658",
+    "VersionId": "0",
+    "IsMultiDialectView": false,
+    "IsMaterializedView": false
+  }
+}

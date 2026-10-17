@@ -1,0 +1,31 @@
+{
+  "Path": "/",
+  "RoleName": "taller-ingdata-p5-redshift-s3-role",
+  "RoleId": "AROAR4PUG5SJIXU5VXLDP",
+  "Arn": "arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role",
+  "CreateDate": "2026-10-16T01:05:38+00:00",
+  "AssumeRolePolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": {
+          "Service": [
+            "redshift-serverless.amazonaws.com",
+            "redshift.amazonaws.com"
+          ]
+        },
+        "Action": "sts:AssumeRole"
+      }
+    ]
+  },
+  "Description": "Permite a Redshift leer los CSV del taller en S3 (COPY)",
+  "MaxSessionDuration": 3600,
+  "Tags": [
+    {
+      "Key": "proyecto",
+      "Value": "taller-ingdata"
+    }
+  ],
+  "RoleLastUsed": {}
+}

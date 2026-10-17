@@ -1,0 +1,9 @@
+{
+  "amount": 4,
+  "breachAction": "log",
+  "period": "daily",
+  "resourceArn": "arn:aws:redshift-serverless:us-east-1:129898048658:workgroup/45546f9c-de70-4eaa-a8f2-4489bb63b4fc",
+  "usageLimitArn": "arn:aws:redshift-serverless:us-east-1:129898048658:usagelimit/719d5940-fe78-4e13-a18d-61e300d38944",
+  "usageLimitId": "719d5940-fe78-4e13-a18d-61e300d38944",
+  "usageType": "serverless-compute"
+}

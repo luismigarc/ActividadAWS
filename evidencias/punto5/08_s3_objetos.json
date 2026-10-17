@@ -1,0 +1,43 @@
+{
+  "IsTruncated": false,
+  "Contents": [
+    {
+      "Key": "redshift/datos/clientes.csv",
+      "LastModified": "2026-10-16T01:08:44+00:00",
+      "ETag": "\"1b623e7f212c3f5c1404158e7664320d\"",
+      "ChecksumAlgorithm": [
+        "CRC32"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "Size": 1008,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "Key": "redshift/datos/pedidos.csv",
+      "LastModified": "2026-10-16T01:08:45+00:00",
+      "ETag": "\"20b34b0038e4c97135b740ffe79e27c0\"",
+      "ChecksumAlgorithm": [
+        "CRC32"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "Size": 3186,
+      "StorageClass": "STANDARD"
+    },
+    {
+      "Key": "redshift/datos/productos.csv",
+      "LastModified": "2026-10-16T01:08:45+00:00",
+      "ETag": "\"c7a58569f7a9e2da8ad4f710e6418da9\"",
+      "ChecksumAlgorithm": [
+        "CRC32"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "Size": 373,
+      "StorageClass": "STANDARD"
+    }
+  ],
+  "Name": "taller-ingdata-p5-129898048658-us-east-1",
+  "Prefix": "redshift/datos",
+  "MaxKeys": 1000,
+  "EncodingType": "url",
+  "KeyCount": 3
+}

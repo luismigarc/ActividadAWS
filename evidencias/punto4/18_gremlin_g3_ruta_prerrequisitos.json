@@ -1,0 +1,27 @@
+{
+  "consulta": "g.V().has('Curso','nombre','Visión Artificial').repeat(out('REQUIERE')).emit().path().by('nombre')",
+  "resultado": [
+    {
+      "labels": [
+        [],
+        []
+      ],
+      "objects": [
+        "Visión Artificial",
+        "Ingeniería de Datos"
+      ]
+    },
+    {
+      "labels": [
+        [],
+        [],
+        []
+      ],
+      "objects": [
+        "Visión Artificial",
+        "Ingeniería de Datos",
+        "Bases de Datos"
+      ]
+    }
+  ]
+}

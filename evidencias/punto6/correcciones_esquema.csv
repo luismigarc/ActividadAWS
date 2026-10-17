@@ -1,0 +1,5 @@
+columna,tipo_inferido,tipo_corregido
+fecha,string,date
+codigo_postal,bigint,string
+cantidad,bigint,int
+precio_unitario,double,"decimal(12,2)"

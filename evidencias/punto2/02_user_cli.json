@@ -1,0 +1,13 @@
+{
+  "Path": "/",
+  "UserName": "user_cli",
+  "UserId": "AIDAR4PUG5SJNVE5RHYGL",
+  "Arn": "arn:aws:iam::129898048658:user/user_cli",
+  "CreateDate": "2026-10-16T00:11:04+00:00",
+  "Tags": [
+    {
+      "Key": "proyecto",
+      "Value": "taller-ingdata"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ciudad,cliente_vip,num_ventas,total
+Barranquilla,false,3,599.00
+Barranquilla,true,2,6012.75
+Bogota,false,2,11246.70
+Bogota,true,1,17499.50
+Cali,false,5,6833.06
+Cali,true,2,6194.00
+Envigado,false,4,8092.06
+Envigado,true,3,13924.40
+Medellin,false,3,3445.98

@@ -1,0 +1,32 @@
+{
+  "id": "8a7247e2-5084-43de-a22d-ec37cd4c31ea",
+  "estado": "FINISHED",
+  "duracion_ms": 2219.087217,
+  "filas_resultado": -1,
+  "error": null,
+  "sql": [
+    "COPY clientes  FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/clientes.csv'  IAM_ROLE 'arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role' FORMAT AS CSV IGNOREHEADER 1 DATEFORMAT 'YYYY-MM-DD' REGION 'us-east-1'",
+    "COPY productos FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/productos.csv' IAM_ROLE 'arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role' FORMAT AS CSV IGNOREHEADER 1 REGION 'us-east-1'",
+    "COPY pedidos   FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/pedidos.csv'   IAM_ROLE 'arn:aws:iam::129898048658:role/taller-ingdata-p5-redshift-s3-role' FORMAT AS CSV IGNOREHEADER 1 DATEFORMAT 'YYYY-MM-DD' REGION 'us-east-1'"
+  ],
+  "subsentencias": [
+    {
+      "sql": "COPY clientes  FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/clientes.csv'  IAM_ROLE '' FORMAT AS CSV IGNOREHEADER 1 DATEFORMAT 'YYYY-MM-DD' REGION 'us-east-1'",
+      "estado": "FINISHED",
+      "duracion_ms": 888.125686,
+      "error": null
+    },
+    {
+      "sql": "COPY productos FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/productos.csv' IAM_ROLE '' FORMAT AS CSV IGNOREHEADER 1 REGION 'us-east-1'",
+      "estado": "FINISHED",
+      "duracion_ms": 524.450358,
+      "error": null
+    },
+    {
+      "sql": "COPY pedidos   FROM 's3://taller-ingdata-p5-129898048658-us-east-1/redshift/datos/pedidos.csv'   IAM_ROLE '' FORMAT AS CSV IGNOREHEADER 1 DATEFORMAT 'YYYY-MM-DD' REGION 'us-east-1'",
+      "estado": "FINISHED",
+      "duracion_ms": 806.511173,
+      "error": null
+    }
+  ]
+}

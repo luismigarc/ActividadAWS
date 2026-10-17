@@ -1,0 +1,7 @@
+{
+  "consulta": "g.V().has('Ciudad','nombre','Medellín').in('VIVE_EN').hasLabel('Estudiante').out('INSCRITO_EN').in('DICTA').dedup().values('nombre')",
+  "resultado": [
+    "Prof. Gómez",
+    "Prof. Rojas"
+  ]
+}

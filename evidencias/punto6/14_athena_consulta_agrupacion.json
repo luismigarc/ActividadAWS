@@ -1,0 +1,16 @@
+{
+  "sql": "SELECT categoria,\n       COUNT(*)                                  AS num_ventas,\n       SUM(cantidad)                             AS unidades,\n       CAST(SUM(cantidad * precio_unitario) AS decimal(14,2)) AS total_ventas,\n       CAST(AVG(cantidad * precio_unitario) AS decimal(14,2)) AS ticket_promedio\nFROM \"ventas\"\nGROUP BY categoria\nORDER BY total_ventas DESC",
+  "estado": "SUCCEEDED",
+  "query_id": "9ea5bfe9-3ab3-40da-abef-c7b1892d9d8c",
+  "bytes_escaneados": 1666,
+  "tiempo_motor_ms": 564,
+  "motivo": null,
+  "columnas": [
+    "categoria",
+    "num_ventas",
+    "unidades",
+    "total_ventas",
+    "ticket_promedio"
+  ],
+  "filas": 3
+}

@@ -1,0 +1,9 @@
+{
+  "AttachedPolicies": [
+    {
+      "PolicyName": "taller-ingdata-user-cli-policy",
+      "PolicyArn": "arn:aws:iam::129898048658:policy/taller-ingdata-user-cli-policy"
+    }
+  ],
+  "IsTruncated": false
+}

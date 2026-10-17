@@ -1,0 +1,7 @@
+componente,uso,costo_usd
+Instancia db.t4g.medium (aprovisionada),0.098 USD/h (ref.),1 h: $0.098 | semana: $16.46 | uso real ~0.28 h: $0.027
+Serverless mínimo 1 NCU (comparación),0.1608 USD/NCU-h,1 h: $0.161 | semana: $27.01
+Almacenamiento,0.0000 GB usados (VolumeBytesUsed),$0.0000/mes
+I/O,pocas miles de peticiones,0.2 USD/millón -> ~$0.00
+Endpoint público,sin EC2 ni túnel,$0.00 adicional (solo transferencia de datos)
+Capa gratuita (cuentas nuevas),750 h t3/t4g.medium por 30 días,posible $0

@@ -1,0 +1,13 @@
+{
+  "sql": "SELECT mes, COUNT(*) AS registros FROM \"ventas\" GROUP BY mes ORDER BY mes",
+  "estado": "SUCCEEDED",
+  "query_id": "e60b995a-b024-45bb-b77a-11f7079abd27",
+  "bytes_escaneados": 2392,
+  "tiempo_motor_ms": 624,
+  "motivo": null,
+  "columnas": [
+    "mes",
+    "registros"
+  ],
+  "filas": 2
+}

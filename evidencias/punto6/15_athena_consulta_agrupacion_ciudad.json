@@ -1,0 +1,15 @@
+{
+  "sql": "SELECT ciudad, cliente_vip, COUNT(*) AS num_ventas,\n       CAST(SUM(cantidad * precio_unitario) AS decimal(14,2)) AS total\nFROM \"ventas\" GROUP BY ciudad, cliente_vip ORDER BY ciudad, cliente_vip",
+  "estado": "SUCCEEDED",
+  "query_id": "a89aeefb-4e71-42c5-bec6-6a053bac555e",
+  "bytes_escaneados": 1666,
+  "tiempo_motor_ms": 1056,
+  "motivo": null,
+  "columnas": [
+    "ciudad",
+    "cliente_vip",
+    "num_ventas",
+    "total"
+  ],
+  "filas": 9
+}

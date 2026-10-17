@@ -1,0 +1,10 @@
+categoria,segmento,num_pedidos,unidades,ventas_netas,ticket_promedio
+Tecnologia,Corporativo,39,79,90797450,2328140
+Tecnologia,Estandar,16,37,50174300,3135894
+Muebles,Corporativo,20,43,38361600,1918080
+Muebles,Premium,6,14,15516550,2586092
+Muebles,Estandar,11,15,14162100,1287464
+Tecnologia,Premium,9,14,7018300,779811
+Hogar,Corporativo,9,24,5367300,596367
+Hogar,Estandar,6,14,3067950,511325
+Hogar,Premium,4,7,1812000,453000

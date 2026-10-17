@@ -1,0 +1,4 @@
+tabla,diststyle,sortkey1,tbl_rows,bloques_1mb
+clientes,ALL,AUTO(SORTKEY),20,16
+pedidos,KEY(id_cliente),fecha_pedido,120,288
+productos,ALL,AUTO(SORTKEY),10,14

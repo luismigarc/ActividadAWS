@@ -1,0 +1,21 @@
+{
+  "IsTruncated": false,
+  "Contents": [
+    {
+      "Key": "ventas/mes=2026-09/ventas_2026-09.csv",
+      "LastModified": "2026-10-16T00:19:50+00:00",
+      "ETag": "\"2f4b41466474d3beac5fb205734c8a4a\"",
+      "ChecksumAlgorithm": [
+        "CRC32"
+      ],
+      "ChecksumType": "FULL_OBJECT",
+      "Size": 1666,
+      "StorageClass": "STANDARD"
+    }
+  ],
+  "Name": "taller-ingdata-p6-129898048658-us-east-1",
+  "Prefix": "ventas/",
+  "MaxKeys": 1000,
+  "EncodingType": "url",
+  "KeyCount": 1
+}

@@ -1,0 +1,17 @@
+{
+  "sql": "SELECT id_venta, fecha, ciudad, producto, cantidad, precio_unitario\nFROM \"ventas\"\nWHERE categoria = 'Tecnologia' AND cantidad >= 3\nORDER BY fecha",
+  "estado": "SUCCEEDED",
+  "query_id": "630286c6-5bf4-40b3-90f9-90178f8ceb0a",
+  "bytes_escaneados": 1666,
+  "tiempo_motor_ms": 718,
+  "motivo": null,
+  "columnas": [
+    "id_venta",
+    "fecha",
+    "ciudad",
+    "producto",
+    "cantidad",
+    "precio_unitario"
+  ],
+  "filas": 12
+}

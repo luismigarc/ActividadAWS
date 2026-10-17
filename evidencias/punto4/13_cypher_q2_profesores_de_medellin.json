@@ -1,0 +1,40 @@
+{
+  "consulta": "MATCH (ciudad:Ciudad {nombre: 'Medellín'})<-[:VIVE_EN]-(e:Estudiante)-[i:INSCRITO_EN]->(c:Curso)<-[:DICTA]-(p:Profesor)\nRETURN p.nombre AS profesor, c.nombre AS curso, collect(e.nombre) AS estudiantes,\n       avg(i.nota) AS nota_promedio\nORDER BY profesor, curso",
+  "resultado": [
+    {
+      "profesor": "Prof. Gómez",
+      "curso": "Bases de Datos",
+      "estudiantes": [
+        "Carla"
+      ],
+      "nota_promedio": 4.7
+    },
+    {
+      "profesor": "Prof. Gómez",
+      "curso": "Ingeniería de Datos",
+      "estudiantes": [
+        "Diego",
+        "Ana"
+      ],
+      "nota_promedio": 4.0
+    },
+    {
+      "profesor": "Prof. Rojas",
+      "curso": "Computación en la Nube",
+      "estudiantes": [
+        "Carla",
+        "Ana"
+      ],
+      "nota_promedio": 4.05
+    },
+    {
+      "profesor": "Prof. Rojas",
+      "curso": "Visión Artificial",
+      "estudiantes": [
+        "Diego"
+      ],
+      "nota_promedio": 4.4
+    }
+  ],
+  "ms_ida_y_vuelta": 17318.89033317566
+}

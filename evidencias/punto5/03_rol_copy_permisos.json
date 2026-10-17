@@ -1,0 +1,24 @@
+{
+  "RoleName": "taller-ingdata-p5-redshift-s3-role",
+  "PolicyName": "taller-ingdata-p5-redshift-s3-role-inline",
+  "PolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:GetObject"
+        ],
+        "Resource": "arn:aws:s3:::taller-ingdata-p5-129898048658-us-east-1/redshift/datos/*"
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:ListBucket",
+          "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws:s3:::taller-ingdata-p5-129898048658-us-east-1"
+      }
+    ]
+  }
+}

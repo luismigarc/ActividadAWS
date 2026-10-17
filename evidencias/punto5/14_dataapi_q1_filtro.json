@@ -1,0 +1,9 @@
+{
+  "id": "3f1da3a4-61c2-4ddf-b1b4-3b5bdfc5e366",
+  "estado": "FINISHED",
+  "duracion_ms": 374.441966,
+  "filas_resultado": 19,
+  "error": null,
+  "sql": "SELECT id_pedido, fecha_pedido, id_cliente, id_producto, cantidad, descuento_pct\nFROM pedidos\nWHERE fecha_pedido BETWEEN '2026-07-01' AND '2026-09-30'\n  AND cantidad >= 3\nORDER BY fecha_pedido, id_pedido",
+  "subsentencias": []
+}

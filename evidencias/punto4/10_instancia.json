@@ -1,0 +1,102 @@
+{
+  "DBInstanceIdentifier": "taller-ingdata-neptune-1",
+  "DBInstanceClass": "db.t4g.medium",
+  "Engine": "neptune",
+  "DBInstanceStatus": "available",
+  "MasterUsername": "admin",
+  "Endpoint": {
+    "Address": "taller-ingdata-neptune-1.cyjau6o6m52z.us-east-1.neptune.amazonaws.com",
+    "Port": 8182,
+    "HostedZoneId": "ZUFXD4SLT2LS7"
+  },
+  "AllocatedStorage": 1,
+  "InstanceCreateTime": "2026-10-16T02:12:42.406000+00:00",
+  "PreferredBackupWindow": "03:32-04:02",
+  "BackupRetentionPeriod": 1,
+  "DBSecurityGroups": [],
+  "VpcSecurityGroups": [
+    {
+      "VpcSecurityGroupId": "sg-06b963e2ace085e8c",
+      "Status": "active"
+    }
+  ],
+  "DBParameterGroups": [
+    {
+      "DBParameterGroupName": "default.neptune1.4",
+      "ParameterApplyStatus": "in-sync"
+    }
+  ],
+  "AvailabilityZone": "us-east-1f",
+  "DBSubnetGroup": {
+    "DBSubnetGroupName": "taller-ingdata-neptune-subnets",
+    "DBSubnetGroupDescription": "Subredes publicas de la VPC por defecto (taller)",
+    "VpcId": "vpc-07bf2d2d4397b6f43",
+    "SubnetGroupStatus": "Complete",
+    "Subnets": [
+      {
+        "SubnetIdentifier": "subnet-0a4d74e755730b601",
+        "SubnetAvailabilityZone": {
+          "Name": "us-east-1b"
+        },
+        "SubnetStatus": "Active"
+      },
+      {
+        "SubnetIdentifier": "subnet-049fbadbdc587d086",
+        "SubnetAvailabilityZone": {
+          "Name": "us-east-1c"
+        },
+        "SubnetStatus": "Active"
+      },
+      {
+        "SubnetIdentifier": "subnet-0402bb5e172434f0d",
+        "SubnetAvailabilityZone": {
+          "Name": "us-east-1d"
+        },
+        "SubnetStatus": "Active"
+      },
+      {
+        "SubnetIdentifier": "subnet-0ce3569331ff3c958",
+        "SubnetAvailabilityZone": {
+          "Name": "us-east-1f"
+        },
+        "SubnetStatus": "Active"
+      },
+      {
+        "SubnetIdentifier": "subnet-0a9061d3094c5c0e8",
+        "SubnetAvailabilityZone": {
+          "Name": "us-east-1a"
+        },
+        "SubnetStatus": "Active"
+      }
+    ]
+  },
+  "PreferredMaintenanceWindow": "mon:07:39-mon:08:09",
+  "PendingModifiedValues": {},
+  "MultiAZ": false,
+  "EngineVersion": "1.4.8.1",
+  "AutoMinorVersionUpgrade": true,
+  "ReadReplicaDBInstanceIdentifiers": [],
+  "LicenseModel": "amazon-license",
+  "OptionGroupMemberships": [
+    {
+      "OptionGroupName": "default:neptune-1-4",
+      "Status": "in-sync"
+    }
+  ],
+  "PubliclyAccessible": true,
+  "StorageType": "standard",
+  "DbInstancePort": 0,
+  "DBClusterIdentifier": "taller-ingdata-neptune",
+  "StorageEncrypted": true,
+  "KmsKeyId": "arn:aws:kms:us-east-1:129898048658:key/02d85c65-d15f-4959-8dfe-bec25027fb58",
+  "DbiResourceId": "db-ZHQCURYJBY4GLMNID7WXUVEOSY",
+  "DomainMemberships": [],
+  "CopyTagsToSnapshot": false,
+  "MonitoringInterval": 0,
+  "PromotionTier": 1,
+  "DBInstanceArn": "arn:aws:rds:us-east-1:129898048658:db:taller-ingdata-neptune-1",
+  "IAMDatabaseAuthenticationEnabled": true,
+  "PerformanceInsightsEnabled": false,
+  "DeletionProtection": false,
+  "NetworkType": "IPV4"
+}

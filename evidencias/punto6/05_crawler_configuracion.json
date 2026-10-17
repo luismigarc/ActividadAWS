@@ -1,0 +1,42 @@
+{
+  "Name": "taller-ingdata-p6-crawler",
+  "Role": "taller-ingdata-p6-glue-crawler-role",
+  "Targets": {
+    "S3Targets": [
+      {
+        "Path": "s3://taller-ingdata-p6-129898048658-us-east-1/ventas/",
+        "Exclusions": []
+      }
+    ],
+    "JdbcTargets": [],
+    "MongoDBTargets": [],
+    "DynamoDBTargets": [],
+    "CatalogTargets": [],
+    "DeltaTargets": [],
+    "IcebergTargets": [],
+    "HudiTargets": []
+  },
+  "DatabaseName": "taller_ventas_db",
+  "Description": "Descubre s3://bucket/ventas/ (CSV particionado por mes)",
+  "Classifiers": [],
+  "RecrawlPolicy": {
+    "RecrawlBehavior": "CRAWL_EVERYTHING"
+  },
+  "SchemaChangePolicy": {
+    "UpdateBehavior": "LOG",
+    "DeleteBehavior": "LOG"
+  },
+  "LineageConfiguration": {
+    "CrawlerLineageSettings": "DISABLE"
+  },
+  "State": "READY",
+  "CrawlElapsedTime": 0,
+  "CreationTime": "2026-10-15T19:21:15-05:00",
+  "LastUpdated": "2026-10-15T19:21:15-05:00",
+  "Version": 1,
+  "Configuration": "{\"Version\":1.0,\"CrawlerOutput\":{\"Partitions\":{\"AddOrUpdateBehavior\":\"InheritFromTable\"}}}",
+  "LakeFormationConfiguration": {
+    "UseLakeFormationCredentials": false,
+    "AccountId": ""
+  }
+}

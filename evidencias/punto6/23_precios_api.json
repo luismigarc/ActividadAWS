@@ -1,0 +1,38 @@
+{
+  "glue_crawler": [
+    {
+      "descripcion": "$0.44 per Data Processing Unit-Hour for AWS Glue crawler",
+      "unidad": "DPU-Hour",
+      "usd": 0.44,
+      "usagetype": "USE1-Crawler-DPU-Hour"
+    }
+  ],
+  "glue_catalogo": [
+    {
+      "descripcion": "$0.44 per Data Processing Unit-Hour for AWS Glue Catalog Statistics",
+      "unidad": "DPU-Hour",
+      "usd": 0.44,
+      "usagetype": "USE1-Column-Statistics-DPU-Hour"
+    },
+    {
+      "descripcion": "$1 per 100,000 objects per month for AWS Glue Data Catalog storage",
+      "unidad": "Obj-Month",
+      "usd": 1e-05,
+      "usagetype": "USE1-Catalog-Storage"
+    },
+    {
+      "descripcion": "$1 per 1,000,000 requests for AWS Glue Data Catalog request",
+      "unidad": "Request",
+      "usd": 1e-06,
+      "usagetype": "USE1-Catalog-Request"
+    }
+  ],
+  "athena": [
+    {
+      "descripcion": "5.00 USD per Terabytes for DataScannedInTB in US East (N. Virginia)",
+      "unidad": "Terabytes",
+      "usd": 5.0,
+      "usagetype": "USE1-DataScannedInTB"
+    }
+  ]
+}

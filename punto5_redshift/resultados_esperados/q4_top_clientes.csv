@@ -1,0 +1,6 @@
+id_cliente,nombre,ciudad,segmento,num_pedidos,ventas_netas
+16.0,Pablo Vargas,Medellin,Corporativo,7,26361050.0
+4.0,Diego Restrepo,Medellin,Corporativo,10,22722450.0
+15.0,Olga Gomez,Envigado,Estandar,10,21965150.0
+10.0,Julian Mejia,Bogota,Corporativo,7,19569500.0
+14.0,Nicolas Gomez,Barranquilla,Estandar,6,18501050.0

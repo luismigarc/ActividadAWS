@@ -1,0 +1,9 @@
+{
+  "id": "b8e7b20a-8e12-4ccd-bbb0-5a2612cc19c7",
+  "estado": "FINISHED",
+  "duracion_ms": 3408.104917,
+  "filas_resultado": 1,
+  "error": null,
+  "sql": "SELECT SUM(charged_seconds) AS rpu_segundos_cobrados,\n       SUM(compute_seconds) AS rpu_segundos_computo,\n       MAX(compute_capacity) AS rpu_max, MAX(data_storage) AS almacenamiento_mb\nFROM sys_serverless_usage",
+  "subsentencias": []
+}

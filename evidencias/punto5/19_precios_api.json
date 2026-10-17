@@ -1,0 +1,36 @@
+{
+  "redshift_serverless": [
+    {
+      "descripcion": "$2,430.00 per RPU-Hr for Redshift serverless capacity reservations all-upfront usage in US East (N. Virginia)",
+      "unidad": "RPU-Hr",
+      "usd": 2430.0,
+      "usagetype": "USE1-Redshift:ServerlessUsage-CR-1YR-AU"
+    },
+    {
+      "descripcion": "$0.375 per RPU-Hr for Redshift Serverless compute charges in US East (N. Virginia)",
+      "unidad": "RPU-Hr",
+      "usd": 0.375,
+      "usagetype": "USE1-Redshift:ServerlessUsage"
+    },
+    {
+      "descripcion": "$0.023 per GB-Mo for Redshift:PaidUniqueSnapshots:Serverless in US East (N. Virginia)",
+      "unidad": "GB-Mo",
+      "usd": 0.023,
+      "usagetype": "USE1-Redshift:PaidUniqueSnapshots:Serverless"
+    },
+    {
+      "descripcion": "$0.293 per RPU-Hr for Redshift serverless capacity reservations usage in US East (N. Virginia)",
+      "unidad": "RPU-Hr",
+      "usd": 0.293,
+      "usagetype": "USE1-Redshift:ServerlessUsage-CR-1YR-NU"
+    }
+  ],
+  "secrets_manager": [
+    {
+      "descripcion": "$0.40 per Secret",
+      "unidad": "Secrets",
+      "usd": 0.4,
+      "usagetype": "USE1-AWSSecretsManager-Secrets"
+    }
+  ]
+}

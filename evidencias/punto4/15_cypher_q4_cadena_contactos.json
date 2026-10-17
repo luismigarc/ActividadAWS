@@ -1,0 +1,165 @@
+{
+  "consulta": "MATCH ruta = (a:Estudiante {nombre: 'Ana'})-[:CONOCE*1..4]-(f:Estudiante {nombre: 'Felipe'})\nRETURN nodes(ruta) AS nodos, length(ruta) AS saltos\nORDER BY saltos\nLIMIT 3",
+  "resultado": [
+    {
+      "nodos": [
+        {
+          "~id": "554ecf84-004e-45c3-b81b-d78d26ca8495",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e1",
+            "nombre": "Ana",
+            "semestre": 9
+          }
+        },
+        {
+          "~id": "ee9ab994-8c43-4459-b788-bae5338f6db3",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e3",
+            "nombre": "Carla",
+            "semestre": 5
+          }
+        },
+        {
+          "~id": "73c76749-4845-4c80-ac72-a345eaab8eb0",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e4",
+            "nombre": "Diego",
+            "semestre": 8
+          }
+        },
+        {
+          "~id": "39bc2d0b-0695-4e46-b472-ac297ebf2f90",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e6",
+            "nombre": "Felipe",
+            "semestre": 4
+          }
+        }
+      ],
+      "saltos": 3
+    },
+    {
+      "nodos": [
+        {
+          "~id": "554ecf84-004e-45c3-b81b-d78d26ca8495",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e1",
+            "nombre": "Ana",
+            "semestre": 9
+          }
+        },
+        {
+          "~id": "9f77d942-dcec-4ab1-83e8-18991b92f97d",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e2",
+            "nombre": "Bruno",
+            "semestre": 7
+          }
+        },
+        {
+          "~id": "73c76749-4845-4c80-ac72-a345eaab8eb0",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e4",
+            "nombre": "Diego",
+            "semestre": 8
+          }
+        },
+        {
+          "~id": "39bc2d0b-0695-4e46-b472-ac297ebf2f90",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e6",
+            "nombre": "Felipe",
+            "semestre": 4
+          }
+        }
+      ],
+      "saltos": 3
+    },
+    {
+      "nodos": [
+        {
+          "~id": "554ecf84-004e-45c3-b81b-d78d26ca8495",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e1",
+            "nombre": "Ana",
+            "semestre": 9
+          }
+        },
+        {
+          "~id": "ee9ab994-8c43-4459-b788-bae5338f6db3",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e3",
+            "nombre": "Carla",
+            "semestre": 5
+          }
+        },
+        {
+          "~id": "d3f2f99f-a4ad-40f0-aa60-a869e23568cf",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e5",
+            "nombre": "Elena",
+            "semestre": 6
+          }
+        },
+        {
+          "~id": "39bc2d0b-0695-4e46-b472-ac297ebf2f90",
+          "~entityType": "node",
+          "~labels": [
+            "Estudiante"
+          ],
+          "~properties": {
+            "codigo": "e6",
+            "nombre": "Felipe",
+            "semestre": 4
+          }
+        }
+      ],
+      "saltos": 3
+    }
+  ],
+  "ms_ida_y_vuelta": 17125.207901000977
+}

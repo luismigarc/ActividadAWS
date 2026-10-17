@@ -1,0 +1,9 @@
+{
+  "id": "a5cc39e1-449d-46c9-bf24-4109783dbd2f",
+  "estado": "FINISHED",
+  "duracion_ms": 2793.229487,
+  "filas_resultado": 3,
+  "error": null,
+  "sql": "SELECT \"table\" AS tabla, diststyle, sortkey1, tbl_rows, size AS bloques_1mb\nFROM svv_table_info WHERE \"schema\" = 'public' ORDER BY 1",
+  "subsentencias": []
+}

@@ -1,0 +1,8 @@
+componente,uso,costo_usd
+Cómputo consumido en el taller,1200 RPU-s,$0.1250
+Cómputo 1 hora activa (4 RPU),4 RPU-h,$1.50
+Cómputo inactivo,0 RPU,$0.00 (Serverless no cobra sin consultas)
+Almacenamiento administrado (RMS),426 MB,$0.0100/mes
+Secreto del admin (Secrets Manager),1 secreto,$0.40/mes prorrateado (~$0.0005/h)
+"S3 (3 CSV, < 10 KB)",-,< $0.0001/mes
+Provisionado ra3.large 1 nodo (referencia),~$0.54/h,se cobra encendido 24/7

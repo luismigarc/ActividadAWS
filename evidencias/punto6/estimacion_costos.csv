@@ -1,0 +1,7 @@
+componente,uso,costo_estimado_usd
+Athena (bytes reales escaneados),17172 B en 12 consultas,-
+"Athena (facturable, mín. 10 MB/consulta con datos)",100 MB,$0.0005
+Crawler (2 ejecuciones x 10 min mín. x ~2 DPU),0.44 USD/DPU-h,$0.2933
+"Glue Data Catalog (2 tablas, 2-4 particiones)",< 1 millón de objetos,$0.00 (capa gratuita)
+S3 almacenamiento (CSV + resultados Athena),2392 B,< $0.0001/mes
+S3 solicitudes PUT/GET,decenas,< $0.001

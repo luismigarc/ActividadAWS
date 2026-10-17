@@ -1,0 +1,18 @@
+{
+  "Database": {
+    "Name": "taller_ventas_db",
+    "Description": "Taller Ingeniería de Datos - punto 6 (ventas)",
+    "CreateTime": "2026-10-15T19:20:08-05:00",
+    "CreateTableDefaultPermissions": [
+      {
+        "Principal": {
+          "DataLakePrincipalIdentifier": "IAM_ALLOWED_PRINCIPALS"
+        },
+        "Permissions": [
+          "ALL"
+        ]
+      }
+    ],
+    "CatalogId": "129898048658"
+  }
+}

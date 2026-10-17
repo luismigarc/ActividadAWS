@@ -1,0 +1,68 @@
+{
+  "vpc": "vpc-07bf2d2d4397b6f43",
+  "route_tables": [
+    {
+      "Associations": [
+        {
+          "Main": true,
+          "RouteTableAssociationId": "rtbassoc-0fc73b159b4c0f9e5",
+          "RouteTableId": "rtb-045001aa605f60add",
+          "AssociationState": {
+            "State": "associated"
+          }
+        }
+      ],
+      "PropagatingVgws": [],
+      "RouteTableId": "rtb-045001aa605f60add",
+      "Routes": [
+        {
+          "DestinationCidrBlock": "172.31.0.0/16",
+          "GatewayId": "local",
+          "Origin": "CreateRouteTable",
+          "State": "active"
+        },
+        {
+          "DestinationCidrBlock": "0.0.0.0/0",
+          "GatewayId": "igw-0e479c981895c5f90",
+          "Origin": "CreateRoute",
+          "State": "active"
+        }
+      ],
+      "Tags": [],
+      "VpcId": "vpc-07bf2d2d4397b6f43",
+      "OwnerId": "129898048658"
+    }
+  ],
+  "subredes": [
+    {
+      "SubnetId": "subnet-0a9061d3094c5c0e8",
+      "AvailabilityZone": "us-east-1a",
+      "CidrBlock": "172.31.0.0/20",
+      "MapPublicIpOnLaunch": true
+    },
+    {
+      "SubnetId": "subnet-0a4d74e755730b601",
+      "AvailabilityZone": "us-east-1b",
+      "CidrBlock": "172.31.80.0/20",
+      "MapPublicIpOnLaunch": true
+    },
+    {
+      "SubnetId": "subnet-049fbadbdc587d086",
+      "AvailabilityZone": "us-east-1c",
+      "CidrBlock": "172.31.16.0/20",
+      "MapPublicIpOnLaunch": true
+    },
+    {
+      "SubnetId": "subnet-0402bb5e172434f0d",
+      "AvailabilityZone": "us-east-1d",
+      "CidrBlock": "172.31.32.0/20",
+      "MapPublicIpOnLaunch": true
+    },
+    {
+      "SubnetId": "subnet-0ce3569331ff3c958",
+      "AvailabilityZone": "us-east-1f",
+      "CidrBlock": "172.31.64.0/20",
+      "MapPublicIpOnLaunch": true
+    }
+  ]
+}

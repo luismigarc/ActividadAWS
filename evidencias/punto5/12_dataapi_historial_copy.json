@@ -1,0 +1,9 @@
+{
+  "id": "ce0e2828-7901-4dec-aed6-9f4f9fce55f5",
+  "estado": "FINISHED",
+  "duracion_ms": 1317.01141,
+  "filas_resultado": 3,
+  "error": null,
+  "sql": "SELECT query_id, table_name, file_format, loaded_rows, loaded_bytes, duration,\n       status FROM sys_load_history ORDER BY start_time DESC LIMIT 3",
+  "subsentencias": []
+}

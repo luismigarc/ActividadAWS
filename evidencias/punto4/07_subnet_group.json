@@ -1,0 +1,51 @@
+{
+  "DBSubnetGroups": [
+    {
+      "DBSubnetGroupName": "taller-ingdata-neptune-subnets",
+      "DBSubnetGroupDescription": "Subredes publicas de la VPC por defecto (taller)",
+      "VpcId": "vpc-07bf2d2d4397b6f43",
+      "SubnetGroupStatus": "Complete",
+      "Subnets": [
+        {
+          "SubnetIdentifier": "subnet-0a4d74e755730b601",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1b"
+          },
+          "SubnetStatus": "Active"
+        },
+        {
+          "SubnetIdentifier": "subnet-049fbadbdc587d086",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1c"
+          },
+          "SubnetStatus": "Active"
+        },
+        {
+          "SubnetIdentifier": "subnet-0402bb5e172434f0d",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1d"
+          },
+          "SubnetStatus": "Active"
+        },
+        {
+          "SubnetIdentifier": "subnet-0ce3569331ff3c958",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1f"
+          },
+          "SubnetStatus": "Active"
+        },
+        {
+          "SubnetIdentifier": "subnet-0a9061d3094c5c0e8",
+          "SubnetAvailabilityZone": {
+            "Name": "us-east-1a"
+          },
+          "SubnetStatus": "Active"
+        }
+      ],
+      "DBSubnetGroupArn": "arn:aws:rds:us-east-1:129898048658:subgrp:taller-ingdata-neptune-subnets",
+      "SupportedNetworkTypes": [
+        "IPV4"
+      ]
+    }
+  ]
+}
